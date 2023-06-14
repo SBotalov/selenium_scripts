@@ -23,4 +23,8 @@ def login(url, username, password):
     signin_button = b.find_element(By.CSS_SELECTOR, '#submitButton') 
     signin_button.click()
 
+<<<<<<< HEAD
 login('https://login.microsoftonline.com', creds.username, creds.password)
+=======
+login('https://login.microsoftonline.com', creds.username, creds.pasword)
+>>>>>>> master
