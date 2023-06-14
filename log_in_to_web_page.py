@@ -1,5 +1,5 @@
 from selenium import webdriver
-
+import creds
 from selenium.webdriver.common.by import By
 
 def login(url, username, password):
@@ -23,4 +23,4 @@ def login(url, username, password):
     signin_button = b.find_element(By.CSS_SELECTOR, '#submitButton') 
     signin_button.click()
 
-login('https://login.microsoftonline.com', 'SBotalov@luxoft.com', 'Kbdthgekmxtvgbjy23!')
+login('https://login.microsoftonline.com', creds.username, creds.password)
